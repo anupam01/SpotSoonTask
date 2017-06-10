@@ -1,0 +1,96 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:translationZ="1dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardBackgroundColor="#FFFFFF"
+    android:layout_marginBottom="@dimen/big_margin"
+    android:layout_marginLeft="@dimen/medium_margin"
+    android:layout_marginRight="@dimen/medium_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="@dimen/text_margin"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_marginBottom="@dimen/text_margin"
+            card_view:cardCornerRadius="2dp">
+
+            <ImageView
+                android:id="@+id/video_image"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:background="@drawable/video1" />
+
+        </android.support.v7.widget.CardView>
+
+        <com.anupam.spotsoontask.CustomFonts.MyTextViewSemiBoldFont
+            android:id="@+id/video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="20dp"
+            android:maxLines="2"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/text_grey"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/card_view2"/>
+
+    <LinearLayout
+        android:id="@+id/time_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/video_title"
+        android:layout_toRightOf="@+id/card_view2"
+        android:layout_marginLeft="@dimen/medium_margin"
+        android:layout_marginTop="2dp">
+
+        <ImageView
+            android:id="@+id/icon_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_history"/>
+
+        <com.anupam.spotsoontask.CustomFonts.MyTextViewRegularFont
+            android:id="@+id/video_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/dark_grey"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+        <com.anupam.spotsoontask.CustomFonts.MyTextViewMediumFont
+            android:id="@+id/video_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:maxLines="2"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/dark_grey"
+            android:layout_below="@+id/time_layout"
+            android:layout_toRightOf="@+id/card_view2"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
